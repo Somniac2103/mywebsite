@@ -1,3 +1,7 @@
+<?php
+
+declare(strict_types=1);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,17 +12,27 @@
 </head>
 
 <body>
-
   <?php
-  $fruits = array("Apple", "Banana", "Cherry");
-  $fruits = ["Apple", "Banana", "Cherry"];
-  echo $fruits[1];
 
-  $fruits[] = "Orange";
-  echo $fruits[3];
+  function sayHello(string $name = "Barry")
+  {
+    return "Hello $name!";
+  }
 
+  function calculator(int $num01, int $num02)
+  {
+    $result = $num01 + $num02;
+    return $result;
+  }
+
+  $test = sayHello();
+  echo $test;
+
+  $value = calculator(1, 5);
+  echo $value;
 
   ?>
+
 </body>
 
 </html>
