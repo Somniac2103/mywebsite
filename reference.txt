@@ -49,3 +49,18 @@ $variable = match ({value to compare}) {
   2=> code,
   default => code,
 };
+
+----SCOPE-----
+Local
+Global (either type GLOBAL or use global object)
+Static will keep the value
+
+-----CONSTANT-----
+*Constants convention typed in caps
+define("PI", 3,14);
+can't change it later
+Good practice to define all constant at the top of page
+
+-----Loops-----
+
+For , while,  do while, and foreach
