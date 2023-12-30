@@ -9,9 +9,14 @@
 
 <body>
 
-  <?php
+  <h3>Signup</h3>
 
-  ?>
+  <form action="icludes/formhandler.inc.php" method="POST">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="pwd" placeholder="Password">
+    <input type="text" name="email" placeholder="Email">
+    <button action="submit">Submit</button>
+  </form>
 
 </body>
 
