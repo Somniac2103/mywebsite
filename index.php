@@ -9,13 +9,12 @@
 
 <body>
 
-  <h3>Signup</h3>
+  <h3>Search</h3>
 
-  <form action="icludes/formhandler.inc.php" method="POST">
-    <input type="text" name="username" placeholder="Username">
-    <input type="password" name="pwd" placeholder="Password">
-    <input type="text" name="email" placeholder="Email">
-    <button action="submit">Submit</button>
+  <form class="searchform" action="search.php" method="POST">
+    <label for="search">Search for user:</label>
+    <input id="search" type="text" name="usersearch" placeholder="Search..." />
+    <button>Search</button>
   </form>
 
 </body>
