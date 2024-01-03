@@ -1,13 +1,6 @@
 <?php
-require_once 'config.php';
-//session_start();
+session_start();
 
-//$_SESSION["username"] = "Barry";
-
-// unset($_SESSION["username"]);
-// session_unset();
-
-//session_destroy();
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +14,7 @@ require_once 'config.php';
 
 <body>
   <?php
-  //echo $_SESSION["username"];
+  echo $_SESSION["username"];
   ?>
 </body>
 
