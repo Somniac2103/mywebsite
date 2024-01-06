@@ -1,0 +1,55 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: papayawhip;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+h3
+{
+  color: blue;
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem, 0rem, 1.5rem, 0rem;
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1.5rem 0;
+}
+
+input, button
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: blue;
+  margin: 0.15rem;
+}
+
+input::placeholder
+{
+  color: rgba(0, 0, 255, 0.25)
+}
+
+button
+{
+  background-color: rgb(255, 255, 24);
+}
