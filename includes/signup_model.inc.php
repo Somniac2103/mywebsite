@@ -2,16 +2,6 @@
 
 declare(strict_types=1);
 
-function signup_inputs(){
-  <input type="text" name="username" placeholder="Username">
-  <input type="password" name="pwd" placeholder="Password">
-  <input type="text" name="email" placeholder="E-Mail">
-
-  if (isset($_SESSION["signup_data"]["username"]) && isset($_SESSION["errors_signup"]["username_taken"])) {
-
-  }
-}
-
 function get_username(object $pdo, string $username)
 {
 
@@ -52,4 +42,3 @@ function set_user(object $pdo, string $username, string $pwd, string $email)
   $stmt->bindParam(":pwd", $hashedPwd);
   $stmt->execute();
 }
-
