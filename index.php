@@ -10,15 +10,13 @@
 <body>
 
   <?php
-  $brand = "Volvo";
-  $color = "Green";
+  require_once 'Classes/Car.php';
 
-  function getCarInfo($brand, $color)
-  {
-    return "Brand: " . $brand . ", Color: " . $color;
-  }
+  $car01 = new Car("Volvo", "Green");
 
-  echo getCarInfo($brand, $color);
+  echo $car01->getColor();
+  echo "hello";
+
   ?>
 </body>
 
